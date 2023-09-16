@@ -5,6 +5,51 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+// <!-- Email Section -->
+
+  const emailIcon = document.getElementById('email-icon');
+  
+  emailIcon.addEventListener('click', () => {
+    // Replace 'recipient@example.com' with the recipient's email address
+    const recipientEmail = 'yusohampadhye@gmail.com';
+    
+    // Replace 'Subject' with the email subject
+    const emailSubject = 'Interview Invitation and Potential Employment Opportunity';
+    
+    // Replace 'Body' with the email body
+    // Replace 'Body' with the email body
+    const emailBody = "I have reviewed your profile, and it aligns perfectly with our company's interests. We are keen to invite you for an interview to further discuss your potential role with us. Your expertise and qualifications have impressed us, and we are excited about the possibility of having you join our team.\n\nKindly let us know your availability, and we will coordinate a convenient time for the interview. We look forward to the opportunity to meet you in person and explore how your skills can contribute to our organization's success.";
+    const mailtoLink = `mailto:${recipientEmail}?subject=${emailSubject}&body=${emailBody}`;
+    
+    // Open the default email client
+    window.location.href = mailtoLink;
+  });
+
+  // Button for resume
+  const downloadButton = document.getElementById('downloadButton');
+
+  // Add a click event listener to the button
+  downloadButton.addEventListener('click', function() {
+      // Replace 'your_google_drive_link' with the actual link to your resume on Google Drive
+      const driveLink = 'https://drive.google.com/file/d/1NZPqzoJtb0PQ7UMqkfFABcJTU8saO8Un/view?usp=drive_link';
+
+      // Create a temporary anchor element
+      const anchor = document.createElement('a');
+
+      // Set the anchor's href attribute to the Google Drive link
+      anchor.href = driveLink;
+
+      // Set the anchor's download attribute to specify a suggested file name for the download
+      anchor.download = 'Soham_Padhye_IITJ_Resume.pdf'; // You can change the file name as needed
+
+      // Programmatically trigger a click event on the anchor element to initiate the download
+      anchor.click();
+
+      // Remove the temporary anchor element from the DOM
+      anchor.remove();
+  });
+
 (function() {
   "use strict";
 

@@ -482,6 +482,25 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+
+  /* Style for the round button */
+  .round-button {
+    border: none;
+    border-radius: 15px; /* Makes the button round */
+    background-color: #149ddd; /* Sets the button background color to blue */
+    color: white; /* Sets the text color to white */
+    padding: 10px 20px; /* Adjust padding for button size */
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  /* Hover effect (optional) */
+  .round-button:hover {
+    background-color: rgb(0, 95, 139); /* Change the background color on hover */
+  }
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
