@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-// <!-- Email Section -->
+// Email Section
 
   const emailIcon = document.getElementById('email-icon');
   
@@ -49,6 +49,8 @@
       // Remove the temporary anchor element from the DOM
       anchor.remove();
   });
+
+  
 
 (function() {
   "use strict";

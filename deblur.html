@@ -78,89 +78,71 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
-        <div class="d-flex justify-content-between">
+        <div class="">
           <h2>Project Details</h2>
-            <ol>
-              <li><a href="index.html" style="font-size: 40px; margin-left: 0px;"><i class="bi bi-house-door"></i></a></li>
-              <!-- <li>Project Details</li> -->
-            </ol>
+          <ol>
+            <li><a href="index.html" style="font-size: 40px; margin-left: 0px;"><i class="bi bi-house-door"></i></a></li>
+            <!-- <li>Project Details</li> -->
+          </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
+    
+    
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-5">
 
-          <div class="col-lg-4">
-            <div class="portfolio-details-slider swiper">
+          <div class="col-lg-6">
+            <!-- <div class="portfolio-details-slider swiper"> -->
               <!-- <div class="swiper-wrapper align-items-center"> -->
 
-                <div>
-                  <img src="assets/img/portfolio/Results.gif" alt="" height="400" width="100" >
-                </div>
-
-                <!-- <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
-                </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                    <img src="assets/img/portfolio/deblur_res.png" width="400" height="350" alt="">
+                </div>
+                
+                <!-- <div class="swiper-slide">
+                    <img src="assets/img/portfolio/Engine2.jpg" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="assets/img/portfolio/Engine3.jpg" alt="">
                 </div> -->
-
-              <!-- </div> -->
-              <!-- <div class="swiper-pagination"></div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Computer Vision</li>
-                <li><strong>Institute</strong>: IIT Jodhpur CSE Dept.</li>
-                <li><strong>Project date</strong>: 01 March, 2023</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/sohampadhye007/Road_segmentation_for_autonomous_vehicles"> GitHub link</a></li>
-              </ul>
+                
+                <!-- </div> -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- </div> -->
             </div>
             
-
-        </div>
-        <div class="portfolio-description">
-          <h2>Road Segmentation</h2> 
-          <p>
-
-The "Road Segmentation for Autonomous Vehicles" project tackles the challenge of segmenting various road types, including off-road, Indian roads, and low-light conditions, to facilitate autonomous vehicle development. This project employs semantic and instance segmentation techniques.
-<p> <h2>Semantic Segmentation with KNN and GMM:
-
-</h2>
-Initially, the project utilizes K-Means (KNN) and Gaussian Mixture Models (GMM) for basic semantic segmentation, clustering pixels based on color and texture. While effective for simple road images, these methods struggle with complex scenarios.
-<p>
-  <h2>Semantic Segmentation with UNet:
-
-  </h2>
-  The UNet architecture is employed for precise semantic segmentation, classifying each pixel into predefined categories. The model is trained on the custom "IITJ_RoadSeg" dataset.
-  <p>
-    <h2>Instance Segmentation with YOLOv8:
-
-    </h2>
-    Instance segmentation, detecting and segmenting objects, is accomplished using YOLOv8 on a custom dataset from IIT Jodhpur. This is crucial for recognizing roads, vital for autonomous vehicles.
-
-    <p><h2>Performance and Results:
-
-    </h2>
-    <ul>
-      <li>YOLOv8 Instance Segmentation:  Mean Average Precision (mAP50): 0.908</li>
-    <li>UNet Semantic Segmentation:  Average Loss: 0.03</li>
-    </ul>
-            
+            <div class="col-lg-6">
+                <div class="portfolio-info">
+                    <h2>Project information</h2>
+                    <ul>
+                        <li><strong>Category</strong>: M.Tech Major Project</li>
+                        <li><strong>Institute</strong>: IIT Jodhpur Electrical Dept.</li>
+                        <li><strong>Project date</strong>: December 2022</li>
+                        <!-- <li><strong>Project URL</strong>: <a href="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/tree/main" target="_blank">GutHub Link</a></li> -->
+                    </ul>
+                </div>
+                
+                
+            </div>
+            <div class="portfolio-description">
+                <h2>Image deblurring using inertial measurement sensors</h2>
+                
+                <p>
+            <ul>
+              <li><strong>Novel Algorithm</strong> : Created an innovative algorithm for predicting motion blur kernels, enabling the recovery of sharp images..</li>
+              <li><strong>Sensor Utilization:</strong>  Extracted precise motion data (linear acceleration and angular velocity) from Inertial Measurement Units (IMUs).</li>
+              <li><strong>Interdisciplinary Approach: </strong>   Leveraged Python, MATLAB, Intel RealSense Depth Camera, and Raspberry Pi for development.</li>
+              <li><strong>Research Paper: </strong>  Currently authoring a research paper for submission to a flagship conference</li>
+            </ul>
+          </p>
       </div>
 
       </div>

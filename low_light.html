@@ -80,10 +80,10 @@
 
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="">
           <h2>Project Details</h2>
           <ol>
-            <li><a href="index.html" style="font-size: 40px; margin-left: 10px;"><i class="bi bi-house-door"></i></a></li>
+            <li><a href="index.html" style="font-size: 40px; margin-left: 0px;"><i class="bi bi-house-door"></i></a></li>
             <!-- <li>Project Details</li> -->
           </ol>
         </div>
@@ -96,49 +96,53 @@
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-5">
 
-          <div class="col-lg-4">
+          <div class="col-lg-10">
             <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+              <!-- <div class="swiper-wrapper align-items-center"> -->
 
-                <div>
-                  <img src="assets/img/portfolio/lowlight_cover.jpg" alt="" height="400" width="100" >
+                <div class="swiper-slide">
+                  <h3>Low light Enhamced Image</h3>
+                  <img src="assets/img/portfolio/low_lighy.png" alt="">
                 </div>
 
                 <!-- <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="assets/img/portfolio/Engine2.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/portfolio/Engine3.jpg" alt="">
                 </div> -->
 
-              </div>
-              <div class="swiper-pagination"></div>
+              <!-- </div> -->
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex justify-content-center align-items-center">
+          <div class="col-lg-6">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h2>Project information</h2>
               <ul>
                 <li><strong>Category</strong>: Computer Vision</li>
                 <li><strong>Institute</strong>: IIT Jodhpur CSE Dept.</li>
                 <li><strong>Project date</strong>: 01 March, 2023</li>
-                <li><strong>Project URL</strong>: <a href="#"></a></li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/tree/main" target="_blank">GutHub Link</a></li>
               </ul>
             </div>
             
 
         </div>
         <div class="portfolio-description">
-          <h2>Road Segmentation</h2>
+          <h2>Enhance Low-Light Images</h2>
           <p>
-            In this project, we addressed the challenging task of road segmentation using a diverse set of techniques and advanced neural network models. Initially, we explored the K-means algorithm, a simple yet effective unsupervised learning approach that clusters image pixels based on their visual similarity. This method laid the groundwork for understanding road segmentation but revealed limitations when dealing with complex scenes. To overcome these challenges, we transitioned to neural network solutions.
-
-<p> We implemented two distinct approaches. First, we employed UNet for semantic segmentation, accurately classifying pixels into predefined categories. UNet, a renowned convolutional neural network, demonstrated remarkable performance on the IITJRoadSeg dataset, enhancing scene understanding. Second, we adopted YOLOv8 for instance segmentation, enabling precise detection and segmentation of road instances. This model, trained on a custom dataset collected from the IIT Jodhpur campus, holds immense significance for applications like autonomous vehicles. Throughout the project, we provided valuable insights, dataset resources, and guidelines for model training, offering a comprehensive exploration of road segmentation techniques.
-</p>
+            <ul>
+              <li><strong>Histogram Equalization:</strong> Utilize the "Night_Enhancement_by_Histogram_equalization.py" script to enhance low-light images by adjusting their histograms.</li>
+              <li><strong>KS Algorithm:</strong> Employ the custom-developed "Night_KS_algorithm.py" to enhance very low-light images using a specialized algorithm</li>
+              <li><strong>Parameter Tuning:</strong> Fine-tune parameters for different types of low-light images, such as medium and very low-light conditions.</li>
+              <li><strong>Deep Learning Model Training:</strong> Train a deep learning model on a custom low-light image dataset. Start by running the "model.py" file to create the model and then execute the "deblur_ae.py" file for deblurring.</li>
+            </ul>
+          </p>
       </div>
 
       </div>
